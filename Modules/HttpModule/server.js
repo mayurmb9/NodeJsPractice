@@ -4,7 +4,7 @@ const http = require('http');
 //web server
 const server = http.createServer((req, res) => {
     if (req.url === '/') {
-        res.write("<h1>Hello World!</h1>");
+        res.write("<h1>Hello Everyone !</h1>");
         res.end();
     }
     if (req.url === '/api/courses') {
