@@ -1,0 +1,35 @@
+/* home.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  text-align: center;
+}
+
+header {
+  background-color: #4277c7;
+  color: white;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+main {
+  margin-top: 40px;
+}
+
+a {
+  text-decoration: none;
+  background-color: #4277c7;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+a:hover {
+  background-color: #164386;
+}
