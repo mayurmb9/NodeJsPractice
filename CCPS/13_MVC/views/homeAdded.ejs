@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head') %>
+<body class="bg-slate-50 text-slate-800 flex flex-col min-h-screen">
+  <%- include('partials/header') %>
+
+  <main class="flex-grow flex items-center justify-center px-4 sm:px-6 lg:px-8 py-12">
+    <div class="max-w-md w-full bg-white rounded-2xl border border-slate-100 shadow-sm p-8 text-center">
+      <div class="w-16 h-16 bg-emerald-50 rounded-full flex items-center justify-center mx-auto mb-5">
+        <svg class="w-8 h-8 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"></path>
+        </svg>
+      </div>
+
+      <h1 class="text-2xl font-bold text-slate-900">Home Added Successfully!</h1>
+      <p class="text-slate-500 text-sm mt-2 max-w-xs mx-auto">Your home has been registered and is now available on the listings page.</p>
+
+      <div class="mt-8 space-y-3">
+        <a href="/" class="w-full inline-flex items-center justify-center px-4 py-2.5 border border-transparent text-sm font-semibold rounded-lg shadow-sm text-white bg-rose-500 hover:bg-rose-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-500 transition-colors duration-200">
+          Go back to Home
+        </a>
+        <a href="/host/add-home" class="w-full inline-flex items-center justify-center px-4 py-2.5 border border-slate-200 text-sm font-semibold rounded-lg text-slate-700 bg-white hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-500 transition-colors duration-200">
+          Register another home
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-white border-t border-slate-100 py-6 text-center text-xs text-slate-400">
+    <p>&copy; <%= new Date().getFullYear() %> Airbnb Clone. All rights reserved.</p>
+  </footer>
+</body>
+</html>

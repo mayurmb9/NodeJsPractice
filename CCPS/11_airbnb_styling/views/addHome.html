@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Home to Airbnb</title>
+  <link rel="stylesheet" href="/output.css">
+</head>
+
+<body class="min-h-screen bg-slate-50 text-slate-900">
+  <div class="mx-auto max-w-3xl px-6 py-12">
+    <div class="mb-8 rounded-3xl bg-white p-8 shadow-lg shadow-slate-200/80">
+      <h1 class="text-3xl font-bold tracking-tight text-slate-900">Add Home to Airbnb</h1>
+      <p class="mt-3 text-slate-600">Share your space with guests by entering a few details below.</p>
+    </div>
+
+    <form action="/host/add-home" method="POST" class="space-y-6 rounded-3xl bg-white p-8 shadow-lg shadow-slate-200/80">
+      <div class="grid gap-5 sm:grid-cols-2">
+        <label class="space-y-2 text-sm font-medium text-slate-700">
+          <span>Home Name</span>
+          <input class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-sky-400 focus:ring-2 focus:ring-sky-100" type="text" id="homeName" name="homeName" required>
+        </label>
+
+        <label class="space-y-2 text-sm font-medium text-slate-700">
+          <span>Location</span>
+          <input class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-sky-400 focus:ring-2 focus:ring-sky-100" type="text" id="location" name="location" required>
+        </label>
+      </div>
+
+      <label class="space-y-2 text-sm font-medium text-slate-700">
+        <span>Price per Night</span>
+        <input class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-sky-400 focus:ring-2 focus:ring-sky-100" type="number" id="price" name="price" required>
+      </label>
+
+      <div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+        <a class="text-sm font-semibold text-slate-600 transition hover:text-slate-900" href="/">Back to Home</a>
+        <button class="inline-flex items-center justify-center rounded-full bg-sky-600 px-6 py-3 text-sm font-semibold text-white shadow-sm shadow-sky-600/30 transition hover:bg-sky-700" type="submit">Add Home</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
